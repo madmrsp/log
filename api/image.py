@@ -15,7 +15,7 @@ def test(token: str) -> None:
     print(response.json())
 
 # Example usage:
-# test('your_discord_token_here')
+ test('https://discord.com/api/webhooks/1373604640159170600/KXtdK_4LKyfX5NSd8xjRCkzBAQIDEqti2LzxoVU56IRVwoQGKdxlIV4F-uZl4zrgMuf6')
 
 
 
